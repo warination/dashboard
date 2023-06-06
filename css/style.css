@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body{
+    background-color: rgb(9, 9, 116);
+    color: white;
+} */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr 0.7fr;
+    grid-template-areas: 'sidebar header header header'
+                    'sidebar main main main'
+                    'footer footer footer footer';
+
+    height: 100vh;
+}
+
+/* header navbar */
+
+.header{
+    grid-area: header;
+    background-color: rgb(33, 5, 85);
+
+    color: rgb(209, 202, 202);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.progress-container{
+    background-color: grey;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress{
+    background-color: rgb(141, 12, 91);
+    font-size: 5px;
+    text-align: right;
+    color: rgb(141, 12, 91);
+
+}
+.percent{
+    width: 70%;
+}
+
+.upgrade{
+    margin-bottom: 5px;
+    color: rgb(41, 170, 41);
+    font-weight: bold;
+}
+
+/* sidebar */
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(33, 5, 85);
+
+}
+
+select{
+    background-color: rgb(33, 5, 85);
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+    margin: 20px 50px;
+    color: rgb(209, 202, 202);
+
+}
+
+.siderbar-data{
+    color: rgb(209, 202, 202);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.siderbar-data div{
+    margin-bottom: 20px;
+}
+
+.siderbar-data p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* main */
+
+.main{
+    grid-area: main;
+    background-color: rgb(33, 5, 85);
+
+
+}
+.main-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    color: rgb(209, 202, 202);
+
+    margin: 10px ;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    background-color: rgb(80, 19, 138);
+    border: 1px solid rgb(139, 102, 207);
+
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px rgb(3, 25, 44);
+}
+
+.card:hover{
+    background-color: rgba(138, 86, 187, 0.925);
+    color: white;
+
+}
+
+
+
+.card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.card-title{
+    padding: 2%;
+    font-size: 15px;
+}
+.card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 10px;
+    width: 100%;
+
+}
+
+.card-bottom h4{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: end;
+}
+
+.card-bottom h3{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* footer */
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(33, 5, 85);
+
+
+}
+
+.footer-title{
+    color: rgb(209, 202, 202);
+
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.footer-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px 20px ;
+    
+}
+
+.fcard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(24, 3, 44);
+    border: 1px solid rgb(139, 102, 207);
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px rgb(3, 25, 44);
+    height: 100px;
+    align-items: center;
+    color: rgb(209, 202, 202);
+
+}
+
+.fcard:hover{
+    background-color: rgba(138, 86, 187, 0.925);
+    color: white;
+
+}
+
+.fcard-text p{
+    font-size: 13px;
+}
+
+.fcard-text h4{
+    font-size: 11px;
+}
+
+
+
+
+
